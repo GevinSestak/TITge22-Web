@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodune töö | Erinevad tabelid</title>
+    <style type="text/css">
+        .ahjuvalve {
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px;
+        }
+        .ahjuvalve th, .ahjuvalve td {
+            text-align: center;
+            background-color: #5fde9f;
+            border: none;
+            padding: 5px;
+            width: 150px;
+        }
+        .riigid table {
+          border-collapse: collapse;
+          width: 100%;
+          max-width: 600px;
+        }
+        .riigid th, .riigid td {
+          padding: 10px;
+          text-align: center;
+          background-color: #f5f5f5;
+          color: #333;
+          border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h3>Tabel 1: Loto</h3>
+    <table>
+        <tr>
+            <td>Võidu numbrid:</td>
+            <td>20</td>
+            <td>15</td>
+            <td>50</td>
+            <td>78</td>
+        </tr>
+        <tr>
+            <td>Lisa numbrid:</td>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Tabel 2: Laoseis</h3>
+    <table border ="2" cellpadding="5" cellspacing="2">
+      <thead>
+        <tr>
+          <th bgcolor="#b56f36">Toode</th>
+          <th bgcolor="#b56f36">Tüki hind</th>
+          <th bgcolor="#b56f36">Laoseis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Õun</td>
+          <td>1.00€</td>
+          <td>10 tk</td>
+        </tr>
+        <tr>
+          <td>Mandariin</td>
+          <td>0.23€</td>
+          <td>3 tk</td>
+        </tr>
+        <tr>
+          <td>Banaan</td>
+          <td>5.32€</td>
+          <td>999 tk</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <h3>Tabel 3: Ahjuvalve graafik</h3>
+    <table class="ahjuvalve">
+      <caption><b>Metsalaagri ahjuvalve</b></caption>
+        <tr>
+            <th></th>
+            <th>8.00 - 9.00</th>
+            <th>9.00 - 13.00</th>
+            <th>13.00 - 18.00</th>
+            <th>18.00 - 23.59</th>
+        </tr>
+        <tr>
+            <th>Esmaspäev</th>
+            <td colspan="2">Martin Helme</td>
+            <td>Jaak Aab</td>
+            <td>Mart Helme</td>
+        </tr>
+        <tr>
+            <th>Teisipäev</th>
+            <td colspan="3">Jüri Ratas</td>
+            <td>Tarmo Kruusimägi</td>
+        </tr>
+        <tr>
+            <th>Kolmapäev</th>
+            <td colspan="4">Kaja Kallas</td>
+        </tr>
+
+    </table>
+    <hr>
+    <h3>Tabel 4: Riigi info</h3>
+    <table class="riigid">
+      <thead>
+        <caption>Riikide info</caption>
+        <tr>
+          <th></th>
+          <th scope="col">Venemaa</th>
+          <th scope="col">Saksamaa</th>
+          <th scope="col">Eesti</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Valuuta</th>
+          <td>Rubla</td>
+          <td>Euro</td>
+          <td>Euro</td>
+        </tr>
+        <tr>
+          <th scope="row">Pealinn</th>
+          <td>Moskva</td>
+          <td>Berlin</td>
+          <td>Tallinn</td>
+        </tr>
+        <tr>
+          <th scope="row">Riigikeel</th>
+          <td>Vene keel</td>
+          <td>Saksa keel</td>
+          <td>Eesti keel</td>
+        </tr>
+        <tfoot>
+          <tr>
+              <td colspan="4">Antud info ei pruugi vastata tõele!</td>
+          </tr>
+      </tfoot>
+      </tbody>
+    </table>
+    <hr>
+</body>
+</html>
