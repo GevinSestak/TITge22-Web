@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registreerimine võistlustele</title>
+    <style type="text/css">
+        body {
+			font-family: Arial, sans-serif;
+		}
+        a {
+			color: #003366;
+			text-decoration: none;
+		}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2>Menüü</h2>
+        <ul>
+            <li><a href="index.html">Avaleht</a></li>
+            <li class="current-page"><a href="register.html">Registreeri võistlustele</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h2>Registeeri ennast Eesti jooksu võistlustele</h2>
+        <form action="/register.html" method="get">
+            <fieldset>
+                <legend>Sinu andmed</legend>
+                <lable>Nimi: <input type="text" name="name"></lable><br>
+                <lable>Email: <input type="text" name="email"></lable><br>
+                <lable>Vanus: <input type="text" name="age" size="1"></lable><br>
+                <lable>Sugu:</lable>
+                <lable><input id="female" type="radio" name="female" value="f"></lable>
+                <label for="female">Naine</label>
+                <lable><input id="male" type="radio" name="male" value="m"></lable>
+                <label for="male">Mees</label>
+            </fieldset> <br>
+            <fieldset>
+                <legend>Jooksu informatsioon</legend>
+                <lable for="length">Mitme <b>kilomeetrist</b> rada soovid läbida?</lable><br>
+                <select name="option" id="length">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="25">25</option>
+                </select><br>
+                <lable for="county">Mis maakonnas soovid osaleda?</lable><br>
+                <select name="county" id="county">
+                    <option value="Harjumaa">Harjumaa</option>
+                    <option value="Tartumaa">Tartumaa</option>
+                    <option value="Lääne-Virumaa">Lääne-Virumaa</option>
+                    <option value="Ida-Virumaa">Ida-Virumaa</option>
+                </select><br>
+                <lable for="items">Mida soovid näha/kuulda vahe punktides? Võid valida mitu! (Ctrl+Hiireklõps)</lable><br>
+                <select name="items" id="items" size="4" multiple="multiple">
+                    <option value="water" selected="selected">Vett</option>
+                    <option value="fruits">Puuvilju</option>
+                    <option value="music">Muusikat</option>
+                    <option value="energy-bar" selected="selected">Energia geel</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Soovitusi võistluse korraldajatele</legend>
+                <p>
+                    <label for="comments">Soovitused:</label><br>
+                    <textarea rows="5" cols="100" id="comments"></textarea>
+                </p>
+            </fieldset>
+            <lable><input type="checkbox" name="subscribe" checked="checked">Liitu meie uudiskirjaga</lable>
+            <br>
+            <input type="submit" value="Registreeri võistlustele"> 
+        </form>
+    </div>
+</body>
+</html>
