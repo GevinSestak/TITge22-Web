@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page | Tulevikute ideedeks</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(img/bg.jpg);
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem;
+        }
+        h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0px;
+            display: flex;
+            margin-left: auto;
+        }
+        nav li {
+            margin-right: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+        a:hover, a.on {
+            color: #435bc7;
+            text-decoration: none;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .boxes {
+            padding: 1rem;
+            box-sizing: border-box;
+            margin: 2rem auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box {
+            width: calc(33.33% - 1rem);
+            border: 1px solid #435bc7;
+            border-radius: 20px;
+            margin: 0 1%;
+            padding: 1rem;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            line-height: 1.5rem;
+        }
+        .button {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 0.25rem;
+        }
+        .button:hover {
+            background-color: #444;
+        }
+        footer {
+            padding: 0.1rem;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <h1>LandingPage</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="on">Avaleht</a></li>
+          <li><a href="#">Teenused</a></li>
+          <li><a href="#">Meist</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="boxes">
+            <div class="box">
+                <h2>Inspiratsioon 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="https://img.freepik.com/free-vector/website-landing-page-with-flowing-lines-design_1048-14338.jpg?w=1380&t=st=1679393301~exp=1679393901~hmac=3c3e959ebfda7afb5e2a8870c3642ffa321e20c3c1dd44efb6d5aec085e86786">Idee</a></p>
+            </div>
+            <div class="box">
+                <h2>Inspiratsioon 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="https://www.vecteezy.com/vector-art/8859016-landing-page-template-with-green-trendy-forest-silhouette-and-moon-on-dark-blue-background-ecological-botanical-design-vector-illustration-concept-for-website-development">Idee 2</a></p>
+            </div>
+            <div class="box">
+                <h2>Inspiratsioon 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p><a href="https://blog.hubspot.com/marketing/landing-page-examples-list">Landing page examples (häid ideid palju)</a></p>
+            </div>
+        </div>
+      <h2>Miks tegin just sellise?</h2>
+      <p>Kuna olen ise väga modernse disaini poolt ja meeldivad väga lihtsad disaini. Kuna oli vaja rohkem harjutada niiöelda "boxe", kõrgust ja laiust ja üldse asetust siis harjutamiseks kärab siuke kah. Kuid plaan on teha ikkagi selliseid mis on inspiratsiooni plokis.</p>
+      <a href="#" class="button">Loe edasi</a>
+    </main>
+    <footer>
+      <center><p>&copy; 2023 GŠ</p></center>
+    </footer>
+  </body>
+</html>
