@@ -155,6 +155,25 @@ figcaption {
     font-size: 20px;
 }
 
+fieldset
+{
+  max-width: 659px;
+  border-radius:8px;
+  padding:16px;	
+}
+
+/* About us */
+
+section.aboutus {
+    float: left;
+    width: 659px;
+    border-right: 1px solid #eeeeee;
+}
+
+.aboutus-info {
+    margin: 25px;
+}
+
 /* Contact */
 
 section.contact {
