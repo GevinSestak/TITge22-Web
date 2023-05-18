@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinks menu</title>
+    <style>
+        body {
+            background-color: #2E292F;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;    
+        }
+        .container {
+            position: absolute;
+            left: 200px;
+            width: 500px;
+            height: 800px;
+            border: 3px solid white;
+            border-radius: 20px;
+        }
+        .menu {
+            margin: 30px auto 20px auto;
+        }
+        .menu-header {
+            font-size: 50px;
+            color: #2E292F;
+            text-align: center;
+            background-color: white;
+        }
+        .menu-item {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 3px;
+            margin-right: 60px;
+            margin-bottom: 10px;
+            padding: 2px;
+        }
+        .menu-item-name {
+            font-size: 20px;
+        }
+        .menu-price {
+            font-size: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .coctail-img {
+            width: 30px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="menu">
+        <div class="menu-header"><img src="img/pngegg.png" class="coctail-img" alt="">Drink menu<img src="img/pngegg.png" class="coctail-img" alt=""></div>
+        <ul>
+            <li class="menu-item">
+                <div class="menu-item-name">Apple Juice</div>
+                <div class="menu-price">3€</div>
+            </li>
+            <li class="menu-item">
+                <div class="menu-item-name">Orange Juice</div>
+                <div class="menu-price">4€</div>
+            </li>
+            <li class="menu-item">
+                <div class="menu-item-name">Lemonade</div>
+                <div class="menu-price">2€</div>
+            </li>
+        </ul>
+    </div>
+    <center><img src="img/pngegg.png" style="height: 600px;" alt=""></center>
+</div>
+</body>
+</html>
