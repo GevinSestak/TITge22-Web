@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button">Get Text File</button>
+    <br>
+    <div id="text"></div>
+    <script>
+         // Loo event listener
+        document.getElementById('button').addEventListener('click', loadText)
+        // Funktsioon
+        function loadText(){
+            // Loo XHR objekt
+            var xhr = new XMLHttpRequest();
+            // OPEN = type, url / file, async
+            xhr.open('GET', 'sample.txt', true);
+            console.log("READYSTATE:", xhr.readyState);
+            xhr.onprogress = function() {
+
+            }
+            // Mõlemat saab kasutada ühes peab readyState = 4. Käima läbi kõik statused.
+            xhr.onload = function() 
+            {
+                if(this.status == 200) 
+                {
+                    //console.log(this.responseText)
+                    document.getElementById('text').innerHTML = this.responseText;
+                }
+                else if(this.status = 404) {
+                    document.getElementById('text').innerHTML = 'Not Found';
+                
+                }
+            }
+            /*xhr.onreadystatechange = function() {
+                if(this.readyState == 4 && this.status == 200) {
+                    //console.log(this.responseText)
+                }
+            }*/
+            xhr.onerror = function() {
+                console.log('Request error...');
+            }
+            // readyState väärtused (readyState values = xhr.onreadystatechange)
+            // 0: request not initialized
+            // 1: server connection established
+            // 2: request recived
+            // 3: processing request
+            // 4: request finished and response is rdy
+            // Saadab nõude (sends request)
+            xhr.send();
+        }
+        // HTTP staatused (this.status == 200)
+        // 200: "OK"
+        // 403: "Forbidden"
+        // 404: "Not found"
+    </script>
+</body>
+</html>
